@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("publiccopy/bg.png");
+    background-repeat: no-repeat;/*This property specifies that the background image should not be repeated if it doesn't cover the entire background area. It ensures that the background image is displayed only once*/
+	background-size: cover;/*This property ensures that the background image covers the entire background area while maintaining its aspect ratio. It might crop parts of the image if necessary to achieve this.*/
+	background-position: center;
+	background-attachment: fixed;/*This property specifies that the background image should remain fixed in its position while the content of the webpage scrolls. This creates a parallax effect where the background appears to remain stationary relative to the viewport*/
+
+}
+
+
+/* dark mode looking scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #121212;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #242424;
+}
+
+
+@layer components{
+    .bg-glass{
+        @apply bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 hover:bg-gray-600 border border-gray-800 text-white
+    }
+}
