@@ -49,9 +49,7 @@ const ExplorePage = () => {
 				)}
 				{!loading && repos.length>0 && <Repos repos={repos} alwaysFullWidth/>}
 				{loading && <Spinner/>}
-				
 			</div>
-		</div>
 	);
 };
 export default ExplorePage
