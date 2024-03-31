@@ -18,7 +18,7 @@ const Sidebar = () => {
 
     <nav className='h-full flex flex-col gap-3'>
         <Link to='/' className='flex justify-center'>
-            <img className='h-8' src='publiccopy/github.svg' alt='Github Logo'></img>
+            <img className='h-8' src='/publiccopy/github.svg' alt='Github Logo'></img>
         </Link>
 
         <Link to='/' className='p-1.5 flex justify-center transition-colors

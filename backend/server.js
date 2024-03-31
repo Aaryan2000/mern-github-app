@@ -24,13 +24,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-
-app.use(cors({
-    origin: 'http://localhost:3003', // Replace with your React app's origin
-  credentials: true
-}))
-
-
 app.use("/api/auth",authRoutes)
 app.use("/api/users",UserRoutes)
 app.use("/api/explore",exploreRoutes)
